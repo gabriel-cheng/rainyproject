@@ -1,7 +1,7 @@
-<strong>PROJETO RAINY MOOD</strong>
+<h1>PROJETO RAINY MOOD</h1>
 <ul>
 	<li>
-		<strong>SOBRE O PROJETO</strong>
+		<h2>SOBRE O PROJETO</h2>
 	</li>
 	<ul type="none">
 		<li>
@@ -9,7 +9,7 @@
 		</li>
 	</ul>
 	<li>
-		<strong>TECNOLOGIAS EM USO</strong>
+		<h2>TECNOLOGIAS EM USO</h2>
 	</li>
 	<ul>
 		<li>
