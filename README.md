@@ -20,7 +20,7 @@
 		</li>
 		<li>
 			JavaScript;
-		</li
+		</li>
 		<li>
 			Heroku Server;
 		</li>
