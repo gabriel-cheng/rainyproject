@@ -1,11 +1,17 @@
+@font-face {
+  font-family: 'rainy';
+  src: url("../fonts/Marcellus_SC/MarcellusSC-Regular.ttf") format("truetype");
+}
+
+* {
+  font-family: 'rainy', Arial, Helvetica, sans-serif;
+}
+
 body {
-  background-image: url(../images/rainy.jpg);
+  background-image: url(../images/background1-heaven.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
-}
-
-header {
-  color: #EB6D23;
+  background-size: 100%;
+  background-color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,12 +20,26 @@ header {
           justify-content: center;
 }
 
-header h1 {
-  font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+main {
+  background-color: rgba(0, 0, 0, 0.377);
+  margin-top: 8%;
+  width: 100%;
+  padding: 20px;
+}
+
+h1 {
   font-size: 4em;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
 }
 
-.centralize {
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,16 +48,23 @@ header h1 {
           justify-content: center;
 }
 
-main img {
-  cursor: pointer;
+.play {
+  background-image: url(../images/button-pause.png);
+  background-size: 130px 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
   height: 130px;
   width: 130px;
+  cursor: pointer;
 }
 
-main img:active {
-  height: 160px;
+.pause {
   background-image: url(../images/button-start.png);
-  background-position: top left;
-  padding-left: 10px;
+  background-size: 130px 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
