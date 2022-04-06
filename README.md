@@ -1,4 +1,4 @@
-<h1>PROJETO RAINY MOOD</h1>
+<h1>PROJETO RAINY MOOD SKYRIM</h1>
 <ul>
 	<li>
 		<h2>SOBRE O PROJETO</h2>
