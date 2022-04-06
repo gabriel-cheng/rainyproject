@@ -1,5 +1,6 @@
 const botao = document.querySelector('.play')
 const rain = document.querySelector('#audio')
+const volume = document.querySelector('#volume')
 
 function playAudio() {
     if(rain.paused) {
@@ -20,6 +21,14 @@ function pauseButton() {
     }
 }
 
+function setVolume(volume) {
+    rain.volume = volume
+}
+
 botao.addEventListener('click', function(event) {
     playAudio()
+})
+
+volume.addEventListener('mousemove', function() {
+    setVolume(this.value)
 })

@@ -20,7 +20,7 @@ body {
 main {
     background-color: rgba(0, 0, 0, 0.377);
     margin-top: 8%;
-    width: 100%;
+    width: 500px;
     padding: 20px;
 }
 
@@ -55,4 +55,11 @@ h1 {
     height: 130px;
     width: 130px;
     cursor: pointer;
+}
+
+.controle-volume {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
