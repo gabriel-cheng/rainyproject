@@ -4,20 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rainy Project</title>
+    <title>Rainy Project :: Skyrim</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
+        <div class="skyrim-div">
+            <img class="skyrim" src="images/Skyrim-logo.png" alt="">
+        </div>
         <h1>Rainy Project<sub>®</sub></h1>
-        <div class="container">
+        <div class="space">
+            <p>Chuva</p>
+            <img class="skyrim" src="images/skyrim-logo-teste.png" alt="">
+        </div>
+        <div class="controle-button">
             <button class="play"></button>
+            <button class="playSkyrim"></button>
         </div>
         <div class="controle-volume">
             <input oninput="setVolume(this.value)" onchange="setVolume(this.value)" type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            <input oninput="setVolumeSkyrim(this.value)" onchange="setVolumeSkyrim(this.value)" type="range" id="volumeSkyrim" min="0" max="1" step="0.01" value="1">
+        </div>
+        <div class="disclaimer">
+            <p>
+                Primeiramente, agradeço a você, usuário, pelo interesse em conhecer mais sobre o projeto. Trata-se de um projeto que tem como base o site <em><abbr title="www.rainymood.com">rainymood</abbr></em>, portanto, deixo aqui os créditos ao rainymood, por disponibilizar alguns elementos que estão presentes neste site.
+            </p>
+        </div>
+        <p class="social">Conecte-se</p>
+        <div class="social">
+            <a target="_blank" href="https://github.com/gabriel-cheng">
+                <abbr title="github">
+                    <img class="img" src="images/github.png" alt="github">
+                </abbr>
+            </a>
+            <a target="_blank" href="https://br.linkedin.com/in/gabriel-henrique-ita">
+                <abbr title="linkedin">
+                    <img class="img" src="images/linkedin.png" alt="linkedin">
+                </abbr>
+            </a>
+        </div>
+        <div class="by">
+            <p>Desenvolvido por Gabriel Carvalho</p>
         </div>
     </main>
     <audio id="audio" src="https://rainymood.com/audio1112/0.m4a"></audio>
+    <audio id="audioSkyrim" src="http://k28.offliberty.com/nRe3xFeyhVY.mp3"></audio>
     <script src="scripts/script.js"></script>
 </body>
 </html>

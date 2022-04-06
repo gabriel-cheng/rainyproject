@@ -1,23 +1,33 @@
-const botao = document.querySelector('.play')
-const rain = document.querySelector('#audio')
+const botaoRain = document.querySelector('.play')
+const botaoSkyrim = document.querySelector('.playSkyrim')
 const volume = document.querySelector('#volume')
+const volumeSkyrim = document.querySelector('#volumeSkyrim')
+const rain = document.querySelector('#audio')
+const audioSkyrim = document.querySelector('#audioSkyrim')
 
 function playAudio() {
     if(rain.paused) {
         rain.play();
-        botao.className = ""
-        botao.className = "pause"
+        botaoRain.className = ""
+        botaoRain.className = "pause"
     }
     else {
         rain.pause()
-        botao.className = ""
-        botao.className = "play"
+        botaoRain.className = ""
+        botaoRain.className = "play"
     }
 }
 
-function pauseButton() {
-    if(rain.paused) {
-        botao.classList('p')
+function playAudioSkyrim() {
+    if(audioSkyrim.paused) {
+        audioSkyrim.play();
+        botaoSkyrim.className = ""
+        botaoSkyrim.className = "pauseSkyrim"
+    }
+    else {
+        audioSkyrim.pause()
+        botaoSkyrim.className = ""
+        botaoSkyrim.className = "playSkyrim"
     }
 }
 
@@ -25,10 +35,22 @@ function setVolume(volume) {
     rain.volume = volume
 }
 
-botao.addEventListener('click', function(event) {
+function setVolumeSkyrim(volume) {
+    audioSkyrim.volume = volume
+}
+
+botaoRain.addEventListener('click', function(event) {
     playAudio()
 })
 
 volume.addEventListener('mousemove', function() {
     setVolume(this.value)
+})
+
+botaoSkyrim.addEventListener('click', function(event) {
+    playAudioSkyrim()
+})
+
+volumeSkyrim.addEventListener('mousemove', function() {
+    setVolumeSkyrim(this.value)
 })

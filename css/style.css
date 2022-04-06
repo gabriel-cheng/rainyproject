@@ -5,6 +5,9 @@
 
 * {
   font-family: 'rainy', Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  text-shadow: 0px 0px 15px #000;
 }
 
 body {
@@ -21,25 +24,14 @@ body {
 }
 
 main {
-  background-color: rgba(0, 0, 0, 0.377);
   margin-top: 8%;
-  width: 500px;
+  width: 100%;
   padding: 20px;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 6em;
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-}
-
-.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -49,6 +41,16 @@ h1 {
 }
 
 .play {
+  background-image: url(../images/button-pause.png);
+  background-size: 130px 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.playSkyrim {
   background-image: url(../images/button-pause.png);
   background-size: 130px 130px;
   background-color: rgba(0, 0, 0, 0);
@@ -68,14 +70,107 @@ h1 {
   cursor: pointer;
 }
 
+.pauseSkyrim {
+  background-image: url(../images/button-start.png);
+  background-size: 130px 130px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+}
+
+.controle-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .controle-volume {
   margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+input[type=range] {
+  cursor: pointer;
+}
+
+.disclaimer {
+  font-size: 1.4em;
+  margin: 25% 4%;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+.social {
+  font-size: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 20px;
+}
+
+.img {
+  margin: 15px;
+  width: 50px;
+}
+
+.by {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.skyrim {
+  width: 200px;
+}
+
+.skyrim-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.space p {
+  background-color: rgba(0, 0, 0, 0.788);
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-left: 30px;
+  font-size: 3em;
+}
+
+.space img {
+  background-color: rgba(0, 0, 0, 0.788);
+  padding: 5px 14px;
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
